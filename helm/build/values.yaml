@@ -1,0 +1,15 @@
+app:
+  name: poi-map-app
+  namespace: rhsummit23
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/rhsummit23-frontend
+  org: Summit23DevRHEL
+  name: rhsummit23-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: rhsummit23/poi-map-app
+  tag: latest
